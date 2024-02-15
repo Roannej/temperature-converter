@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="myscripts.js"></script>
+    <script src="app.js"></script>
     <title>Temperature Converter</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+
+    <section class="calc">
+        <p>
+            <label>Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)">
+          </p>
+          <p>Celsius: <span id="outputCelsius"></span></p>    
+    </section>
 </body>
 </html>
